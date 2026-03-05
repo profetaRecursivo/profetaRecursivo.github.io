@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: sf pro, arial, sans-serif;
+}
+
+main{
+  padding: 16px;
+}
+
+header{
+  padding: 20px;
+  text-align: center;
+}
