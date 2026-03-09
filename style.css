@@ -1,6 +1,77 @@
 *{
   box-sizing: border-box;
 }
+:root{
+    --color-titulo: #D1D5DB;
+    --color-texto-normal: #D1D5DB;
+    --color-texto-destacado: #FACC15;
+}
 body{
-  font-family: geist, sans-serif;
+  font-family: "Geist Sans", sans-serif;
+  background: radial-gradient(
+      circle at 20% 30%,
+      #10203f 0%,
+      #0b132b 40%,
+      #050816 100%
+  );
+
+}
+.parrafo-sobre-mi{
+    margin: 12px;
+}
+body {
+  margin: 12px;
+  padding: 0 12px;
+}
+h1, h2, h3{
+    color: var(--color-titulo)
+}
+p{
+    color: var(--color-texto-normal)
+}
+time{
+    color: gray
+}
+section{
+    margin-top: 25px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.icono-titulo{
+    max-width: 24px;
+    max-height: 24px;
+    filter: invert(1);
+}
+.contenedor-titulo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.contenedor-titulo h2{
+
+}
+.contenedor-titulo-experiencia h3{
+    margin-bottom: 5px;
+    margin-top: 18px;
+}
+.item-experiencia{
+    border: 3px solid white;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 17px;
+    width: 100%;
+    max-width: 380px;
+    /* margin: 12px; */
+    margin-bottom: 40px;
+
+}
+.img-experiencia{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
 }
