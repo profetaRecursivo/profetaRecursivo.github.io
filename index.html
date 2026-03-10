@@ -10,20 +10,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
     <header>
-      <nav>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
       <div class="titulo-principal">
         <h1>Jaime Sebastian Chavarria Fuertes</h1>
         <p>
@@ -117,8 +116,10 @@
           <h2 class="titulo">Proyectos</h2>
         </div>
         <article class="proyecto">
-          <h3 class="titulo-proyecto">pyteambook</h3>
-
+          <div class="contenedor-titulo-proyecto">
+            <h3 class="titulo-proyecto">pyteambook</h3>
+            <p class="etiqueta-tecnologias">python | Automatizacion | CLI</p>
+          </div>
           <p>
             pyteambook es una herramienta de línea de comandos (CLI) diseñada
             para automatizar la creación de Team Reference Documents (Teambooks)
@@ -139,9 +140,12 @@
           </a>
         </article>
         <article class="proyecto">
-          <h3 class="titulo-proyecto">
-            Aplicacion de bases de datos orientadas a grafos
-          </h3>
+          <div class="contenedor-titulo-proyecto">
+            <h3 class="titulo-proyecto">
+              Aplicacion de bases de datos orientadas a grafos
+            </h3>
+            <p class="etiqueta-tecnologias">python | Neo4j</p>
+          </div>
           <p>
             Aplicación que implementa un sistema de autenticación utilizando una
             base de datos orientada a grafos con Neo4j. El proyecto explora el
@@ -158,7 +162,10 @@
           </a>
         </article>
         <article class="proyecto">
-          <h3 class="titulo-proyecto">Apuntes de Programación Competitiva</h3>
+          <div class="contenedor-titulo-proyecto">
+            <h3 class="titulo-proyecto">Apuntes de Programación Competitiva</h3>
+            <p class="etiqueta-tecnologias">Algoritmos | ICPC</p>
+          </div>
           <p>
             Colección personal de apuntes y referencias sobre algoritmos y
             estructuras de datos utilizados en programación competitiva. Incluye

@@ -3,6 +3,9 @@
     margin: 0px;
     padding: 0px;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 :root {
     --color-titulo: #D1D5DB;
@@ -17,16 +20,63 @@ body {
             #10203f 0%,
             #0b132b 40%,
             #050816 100%);
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:#A5B4FC;
+}
+header,
+main {
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgb(27, 40, 95);
+    padding: 12px 0;
+}
+.titulo-principal{
+    margin-top: 25px;
+    text-align: center;
+}
+.menu {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 4px 6px;
+}
+
+section {
+    scroll-margin-top: 80px;
 }
 
 .parrafo-sobre-mi {
     margin: 12px;
-}
-
-body {
-    margin: 12px;
-    padding: 0 12px;
 }
 
 h1,
@@ -89,7 +139,9 @@ nav {
         0 0 35px rgba(255, 255, 255, 0.4),
         0 0 70px rgba(255, 255, 255, 0.2);
 }
-
+img{
+    border-radius: 5px;
+}
 .img-experiencia {
     width: 100%;
     max-width: 320px;
@@ -115,9 +167,18 @@ nav {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-.titulo-proyecto{
+.contenedor-titulo-proyecto {
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 13px;
+}
+
+.titulo-proyecto,
+.etiqueta-tecnologias {
+    text-align: center;
+}
+.etiqueta-tecnologias{
+    margin-top: 5px;
+    color: #676e83ea;
 }
 
 .link-repositorio{
