@@ -3,13 +3,12 @@
     margin: 0px;
     padding: 0px;
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 16px;
     padding: 0;
-    margin:0;
-    
-
+    margin: 0;
 }
 
 :root {
@@ -27,10 +26,11 @@ body {
             #050816 100%);
 }
 
-a{
+a {
     text-decoration: none;
-    color:#A5B4FC;
+    color: #A5B4FC;
 }
+
 header,
 main {
     padding-left: 2.4rem;
@@ -46,10 +46,12 @@ main {
     background: rgb(27, 40, 95);
     padding: 0.5rem 0;
 }
-.titulo-principal{
+
+.titulo-principal {
     margin-top: 25px;
     text-align: center;
 }
+
 .menu {
     list-style: none;
     display: grid;
@@ -88,6 +90,7 @@ h2,
 h3 {
     color: var(--color-titulo);
 }
+
 p {
     color: var(--color-texto-normal)
 }
@@ -102,10 +105,7 @@ section {
 }
 
 nav {
-    /* display: flex;
-    flex-wrap: wrap;*/
-    /* gap: 10px; */
-    font-size: small; 
+    font-size: small;
 }
 
 .icono-titulo {
@@ -133,21 +133,17 @@ nav {
     border-radius: 15px;
     text-align: justify;
     padding: 0rem 1rem 1rem 1rem;
-    width: 20rem;
-    max-width: 100%;
+    width: 100%;
+    max-width: 24rem;
     max-height: 100%;
     margin: 25px auto 40px auto;
     align-items: center;
 }
 
-/* .item-experiencia:hover {
-    box-shadow:
-        0 0 35px rgba(255, 255, 255, 0.4),
-        0 0 70px rgba(255, 255, 255, 0.2);
-} */
-img{
+img {
     border-radius: 5px;
 }
+
 .img-experiencia {
     width: 100%;
     height: auto;
@@ -160,14 +156,15 @@ img{
 }
 
 
-.proyecto{
-    margin: 40px auto 40px auto;
-    padding: 0px 10px 0px 10px;
+.proyecto {
     text-align: justify;
     border: 3px solid rgba(255, 255, 255, 0.25);
     border-radius: 15px;
     padding: 18px 20px 17px 20px;
     transition: transform 0.2s ease, border-color 0.2s ease;
+    width: 100%;
+    max-width: 24rem;
+    margin: 0 auto;
 }
 
 
@@ -180,12 +177,13 @@ img{
 .etiqueta-tecnologias {
     text-align: center;
 }
-.etiqueta-tecnologias{
+
+.etiqueta-tecnologias {
     margin-top: 5px;
     color: #676e83ea;
 }
 
-.link-repositorio{
+.link-repositorio {
     display: block;
     border-radius: 5px;
     border: 2px solid var(--color-borde-boton);
@@ -196,9 +194,9 @@ img{
     background-color: #2564eb33;
     color: white;
     text-decoration: none;
-} 
+}
 
-.link-repositorio:active{
+.link-repositorio:active {
     background-color: blue;
 }
 
@@ -206,5 +204,10 @@ img{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 1.5rem;
-    align-items: start;
+    align-items: stretch;
+}
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
 }
